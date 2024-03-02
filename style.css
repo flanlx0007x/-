@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* เปลี่ยนสีพื้นหลังเป็นเทาเน้นๆ */
+}
+
+.schedule {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #e0e0e0; /* เปลี่ยนสีพื้นหลังของตารางเรียนเป็นสีเทาอ่อน */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.break {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-style: italic;
+    color: #888;
+}
+
+.clock {
+    position: fixed;
+    top: 20px; /* ระยะห่างจากด้านบน */
+    right: 20px; /* ระยะห่างจากด้านขวา */
+    background-color: #757575; /* เปลี่ยนสีพื้นหลังของนาฬิกาเป็นเทาเข้ม */
+    color: #fff; /* สีข้อความ */
+    padding: 10px 20px; /* ขนาดการเว้นระหว่างขอบกล่องและข้อความ */
+    border-radius: 10px; /* มุมของกล่อง */
+    font-size: 24px; /* ขนาดตัวอักษร */
+}
+
+.alarm-clock {
+    position: fixed;
+    top: 50%; /* ความสูงใหม่ของกล่องสีเหลี่ยมจะตรงกับกึ่งกลาง */
+    right: 50%; /* ตำแหน่งใหม่ของกล่องสีเหลี่ยมจะตรงกับกึ่งกลาง */
+    transform: translate(50%, -50%); /* ใช้ transform เพื่อย้ายกล่องไปที่มุมขวาบน */
+    width: 150px; /* ขนาดกว้างของกล่องสีเหลี่ยม */
+    height: 150px; /* ขนาดสูงของกล่องสีเหลี่ยม */
+    background-color: #bdbdbd; /* เปลี่ยนสีพื้นหลังของนาฬิกาปลุกเป็นเทาอ่อน */
+    border-radius: 50%; /* ทำให้กล่องเป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* ขนาดตัวอักษร */
+    color: #fff; /* สีข้อความ */
+}
+
+.schedule .class.active {
+    color: #757575; /* เปลี่ยนสีข้อความเมื่อคาบที่กำลังเรียนอยู่เป็นเทาเข้ม */
+}
+
+#day-info {
+    text-transform: uppercase; /* ทำให้ข้อความเป็นตัวใหญ่ทั้งหมด */
+    font-weight: bold; /* ทำให้ตัวหนา */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    color: #616161; /* เปลี่ยนสีข้อความเป็นเทาอ่อน */
+}
+
+.contact-support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-support button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #70ffdb;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-support button:hover {
+    background-color: #70ffdb;
+}
